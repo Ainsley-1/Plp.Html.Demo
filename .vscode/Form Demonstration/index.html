@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body> 
+    <header>
+        <h1> Enhanced html demonstration </h1>
+        <p>This is a demonstration of an enhanced HTML form with various input types and validation.</p>
+    </header>
+    
+    <section id="lists">
+        <article>
+        <h2>Ai Technologies Lists</h2>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Natural Language Processing</li>
+            <li>Computer Vision</li>
+        </ul>
+        </article>
+
+        <article>
+            <h3> how to use Ai</h2>
+             <ol>
+                  <li>Data Collection</li>
+                  <li>Data Preprocessing</li>
+                  <li>Model Training</li>
+                  <li>Model Evaluation</li>
+                  <li>Deployment</li>
+             </ol>   
+        </article>
+
+    <article>
+       <h3> Ai Terms</h3>
+        <dl>
+            <dt>AI</dt>
+            <dd>Artificial Intelligence, the simulation of human intelligence in machines.</dd>
+            <dt>ML</dt>
+            <dd>Machine Learning, a subset of AI that enables systems to learn from data.</dd>
+            <dt>DL</dt>
+            <dd>Deep Learning, a type of ML that uses neural networks with many layers.</dd>
+        </dl>
+    </article>
+    </section>
+
+    <section id="tables">
+        <h2>AI Technologies Comparison</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Description</th>
+                    <th>Applications</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Artificial Intelligence</td>
+                    <td>Simulation of human intelligence in machines.</td>
+                    <td>Robotics, Automation, Decision Making</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>Systems that learn from data to improve performance.</td>
+                    <td>Predictive Analytics, Recommendation Systems</td>
+                </tr>
+                <tr>
+                    <td>Deep Learning</td>
+                    <td>A subset of ML using neural networks with many layers.</td>
+                    <td>Image Recognition, Natural Language Processing</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+   <section id="media">
+        <h2> Ai Demonstration</h2>
+        
+        <article>
+            <h3>Images</h3>
+            <figure>
+                <img src="Assets/pexels-agk42-2599244.jpg" alt="Ai Concept" width="50%" height="auto">
+                <figcaption>AI Concept Image</figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <h3>Video</h3>
+            <video width="100%" controls>
+                <source src="Assets/5302509-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+        
+        <article>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </article>
+     </section>
+
+     <section id="form">
+        <h2>HTML5 Form with Validation</h2>
+        
+        <form id="registration-form" action="#" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+                
+                <div class="form-row">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" 
+                           placeholder="Enter your full name" autocomplete="name">
+                </div>
+                
+                <div class="form-row">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="example@domain.com" autocomplete="email">
+                </div>
+                
+                <div class="form-row">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" id="password" name="password" required 
+                           minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                           placeholder="Minimum 8 characters with at least 1 letter and 1 number">
+                </div>
+                
+                <div class="form-row">
+                    <label for="confirm-password" class="required">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required 
+                           placeholder="Re-enter your password">
+                </div>
+                
+                <div class="form-row">
+                    <label for="birthdate" class="required">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate" required 
+                           min="1900-01-01" max="2023-12-31">
+                </div>
+                
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" 
+                           placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                           autocomplete="tel">
+                </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+                
+                <div class="form-row">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" class="inline-label required">
+                        I agree to the Terms of Service and Privacy Policy
+                    </label>
+                </div>
+                
+                <div class="form-row">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter" class="inline-label">
+                        Subscribe to our newsletter
+                    </label>
+                </div>
+            </fieldset>
+            
+            <div class="form-row">
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Enhanced Form Demonstration. All rights reserved.</p>
+        <address>
+            Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </footer>
+
+
+</body>
+</html>
